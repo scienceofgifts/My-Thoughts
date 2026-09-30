@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-alabaster: #FAF9F6;
+  --color-warm-white: #FFFFFF;
+  --color-charcoal: #252525;
+  --color-charcoal-muted: #6B6A67;
+  --color-warm-gray: #E8E5DF;
+  --color-warm-gray-light: #F3F1ED;
+  --color-muted-blue: #8FAFC8;
+  --color-soft-blue: #EEF4F8;
+  --color-muted-sage: #8EAA9D;
+  --color-soft-sage: #EEF3F0;
+}
+
+@layer base {
+  body {
+    background-color: #FAF9F6;
+    color: #252525;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Restrained scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8E5DF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4D0C7;
+}
+
+/* Subtle focus ring */
+*:focus-visible {
+  outline: 1.5px solid #6B6A67;
+  outline-offset: 2px;
+}
+
+/* Smooth textarea auto-grow animation */
+textarea {
+  resize: none;
+}

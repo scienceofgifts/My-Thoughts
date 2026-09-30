@@ -1,0 +1,7 @@
+{
+  "name": "Thought Workspace",
+  "description": "A private personal thinking space to capture thoughts, unpack layers, understand what's bothering you, and find clarity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
